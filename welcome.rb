@@ -13,6 +13,9 @@
     #player then continues down hallway leading to the same foyer as option1 above. from here the player has three further options not available to option1, a) find the evil scientist who lives in the house alone and tortures everyone to kill him and rescue the other survivors, or b) find an escape route to escape alone, or c) rescue the other survivors and escape.
 
     puts "Welcome to 'The Forgotten: Ruby Edition!'"
+    puts "Would you like to access the game instructions, or start playing immediately?"
+
+    #need to figure out here how to add options for main menu
     puts "The controls of this game are fairly simple; when met with a question, the responses can be typed in the terminal. The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'."
     puts ""
     puts "If that makes sense, please type 'start' to begin."
@@ -43,5 +46,7 @@
         case (gets.chomp)
             when "yes"
                 puts "You reach for the book"
+            when "no"
+                puts "Interest waning, you return your attention to the room, studying the door instead"
             end
     end    
