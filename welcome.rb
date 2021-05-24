@@ -12,18 +12,36 @@
     # if player stabs npc1, they will follow same route as above, except they now have a rusty-fork. when getting option of opening doors of occupied rooms, if opened player can survive if they use the rusty-fork against the zombies. They also find a journal in one of the zombie rooms if this route is chosen. Journal entry will describe the torture the children have been going through in the facility.
     #player then continues down hallway leading to the same foyer as option1 above. from here the player has three further options not available to option1, a) find the evil scientist who lives in the house alone and tortures everyone to kill him and rescue the other survivors, or b) find an escape route to escape alone, or c) rescue the other survivors and escape.
 
-
-
-    puts "the air is heavy, and you can hear yourself breathing heavily. You slowly open your eyes, painfully adjusting to the dim light in the unfamiliar surroundings."
-    puts "You find yourself in a narrow bedroom, lying on a moldy mattress. A wooden door stands before you, clearly bolted shut. From a small window above the wall to your right, you spot a distant crescent moon - it is nighttime."
+    puts "Welcome to 'The Forgotten: Ruby Edition!'"
+    puts "The controls of this game are fairly simple; when met with a question, the responses can be typed in the terminal. The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'."
+    puts ""
+    puts "If that makes sense, please type 'start' to begin."
+    print "> "
+    case (gets.chomp)
+    when "start"
+        puts ""
+        puts "the air is heavy, and you can hear yourself breathing heavily. You slowly open your eyes, painfully adjusting to the dim light in the unfamiliar surroundings."
+        puts "You find yourself in a narrow bedroom, lying on a moldy mattress. A wooden door stands before you, clearly bolted shut. From a small window above the wall to your right, you spot a distant crescent moon - it is nighttime."
+    
+    end
     puts "A sudden voice echoes in the dark, 'Oh, you're finally awake - What's your name?'"
     main_character = gets.chomp
     puts "the name #{main_character} escapes your lips before you even register the question. From the corner of your eye you spot a hunched figure on a mattress to your left. It is a girl, barely 14 by the looks of it."
     puts "'well rise and shine #{main_character}, you've been out for a fair few hours so I thought you were dead', she remarks with amusement. You study her appearance briefly - while she appears young, deep-set scars mar the youthful nature of her face. Her large green eyes seem dull and lifeless, and her long auburn hair is matted. Where once may have been a lively and active young girl sat instead a forlorn and hopeless child, who had clearly been through a lot."   
     puts "Do you ask her name in return? [y/n]:"
     case (gets.chomp)
-    when "yes"
-    puts "'They call me Sypha'"
-    when "no"
-    puts "You choose to ignore the girl. Instead you look around the decaying room further, trying to understand your surroundings."    
+        when "yes"
+        puts "'They call me Sypha'"
+        when "no"
+        puts "You choose to ignore the girl. Instead you look around the decaying room further, trying to understand your surroundings."    
     end
+    puts "Would you like to a) examine the door, b) inspect the window or c) wander around?"
+    case (gets.chomp)
+    when "c"
+        puts "With a deep breath, you lift yourself up from the mattress with great difficulty, still groggy from the effects of sleep. The floorboards creaking under your weight, you notice that the room is fairly empty lest for two moldy mattresses on opposite ends, a dying oil lamp and a small leatherbound book upon which the lamp rested."
+        puts "Do you reach for the book?"
+        case (gets.chomp)
+            when "yes"
+                puts "You reach for the book"
+            end
+    end    
