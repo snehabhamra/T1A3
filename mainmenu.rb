@@ -1,12 +1,13 @@
 system "clear"
+#system clear ensures that when this program is run the terminal is cleared to allow for a nice clean interface for the user, making their playime more enjoyable.
 
 require "tty-prompt"
 prompt = TTY::Prompt.new
+#links to the ruby GEM to allow for main menu creation.
 
-
-
-puts "Welcome to 'The Forgotten: Ruby Edition!'"
+puts "Welcome to 'The Forgotten: GOTY Edition' - guaranteed to be the corniest most cliche game you'll ever play!"
 sleep (1)
+#sleep is handy syntax to allow for a pause/break between text so it does not appear as static or as squashed together.
 
 choices = [
         {name: 'View_Instructions', value: 1},
@@ -21,7 +22,7 @@ if user_input == 1
     puts "The controls are fairly simple, when met with a question, the responses can be selected or typed in the terminal."
     puts "The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'."
     sleep (1)
-    puts "If that makes sense, please type 'start' to begin."
+    puts "If that makes sense, please type 'start' to begin! If it doesn't make sense, then I really don't know what to tell you.."
     print "> "
     case (gets.chomp)
     when "start"
@@ -43,7 +44,7 @@ end
 
 if user_input == 3
     #begin game prompt, links to another ruby file which contains most of the game script
-    puts "Please type 'start' to begin."
+    puts "You need to type 'start' to begin."
     print "> "
     case (gets.chomp)
     when "start"  
@@ -53,9 +54,9 @@ end
 
 if user_input == 4
     #quit game prompt, terminates program instead with exit message
-    prompt.yes? ("Are you sure you would like to quit?")
+    prompt.yes? ("Do you really think it's a good idea to quit now?")
     if true 
-        puts "Thank you for playing 'The Forgotten: Ruby Edition!'"
+        puts "Thanks for playing this game I guess.. we'll see you next time!"
         exit(true)
     end
 end
