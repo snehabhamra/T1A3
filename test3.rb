@@ -10,8 +10,9 @@ sleep (1)
 
 choices = [
         {name: 'View_Instructions', value: 1},
-        {name: 'Play_Game', value: 2},
-        {name: 'Exit', value: 3}
+        {name: 'View_About', value: 2},
+        {name: 'Play_Game', value: 3},
+        {name: 'Exit', value: 4}
       ]
       
 user_input = prompt.select("What would you like to do?", choices)
@@ -29,6 +30,15 @@ if user_input == 1
 end
 
 if user_input == 2
+    puts "The Forgotten is a non-linear, text based mystery game, which involves an amnesiac protagonist who must navigate their way through a mansion of horrors."
+    prompt.yes? ("would you like to go back?")
+    if true
+       require "../RUBY/test3.rb"
+    end
+end
+
+
+if user_input == 3
     puts "Please type 'start' to begin."
     print "> "
     case (gets.chomp)
@@ -37,7 +47,7 @@ if user_input == 2
     end
 end
 
-if user_input == 3
+if user_input == 4
     prompt.yes? ("Are you sure you would like to quit?")
     if true 
         puts "Thank you for playing 'The Forgotten: Ruby Edition!'"
