@@ -31,9 +31,10 @@ end
 
 if user_input == 2
     puts "The Forgotten is a non-linear, text based mystery game, which involves an amnesiac protagonist who must navigate their way through a mansion of horrors."
+    puts "Inspired by older horror games like Resident Evil, Amnesia and the now extinct Choose-Your-Own-Adventure books genre, 'The Forgotten' offers a few different player paths and endings."
     prompt.yes? ("would you like to go back?")
     if true
-       require "../RUBY/test3.rb"
+       require "../RUBY/mainmenu.rb"
     end
 end
 
