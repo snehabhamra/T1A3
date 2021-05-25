@@ -1,4 +1,4 @@
-T1A3
+T1A3 - 'The Forgotten: GOTY Edition' 
 
 This is a choose-your-own-adventure text based game I developed through Ruby. 
 
