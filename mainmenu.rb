@@ -37,13 +37,16 @@ if user_input == 1
     puts ""
     puts "If that makes sense, please type 'start' to begin! If that doesn't make sense, then I really don't know what to tell you..".colorize(:color => :red, :background => :black)
     print "> ".colorize(:color => :red, :background => :black)
-    case (gets.chomp)
-    when "start"
-        require "../T1A3_SBhamra/Play_Game.rb"
-    else
-        puts "please type start".colorize(:color => :red, :background => :black) 
-        
-    end
+    while user_input = gets.chomp # loop while getting user input
+        case user_input
+        when "start"
+          require "../T1A3_SBhamra/Play_Game.rb"
+          break # make sure to break so you don't ask again
+        else
+          puts "Please enter start".colorize(:color => :red, :background => :black)
+          print ">".colorize(:color => :red, :background => :black) # print the prompt, so the user knows to re-enter input
+        end
+      end
 end
 
 if user_input == 2
