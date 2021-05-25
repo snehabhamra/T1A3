@@ -1,34 +1,27 @@
-system "clear"
-
-require "tty-prompt"
-prompt = TTY::Prompt.new
 
 
-puts "Welcome to 'The Forgotten: Ruby Edition!'"
-sleep (1)
-prompt.select("What would you like to do?", %w("View_Instructions" "Play_Game" "Exit"))
+prompt = "> "
+puts "Please enter 'start' to begin."
+print prompt
 
-    
-
-
-class View_Instructions
-    puts "The controls are fairly simple, when met with a question, the responses can be selected or typed in the terminal."
-    puts "The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'."
-    sleep (1)
-    puts "If that makes sense, please type 'start' to begin."
-    print "> "
-    case (gets.chomp)
-    when "start"
-        navigate_to Play_Game
-    end
+while user_input = gets.chomp # loop while getting user input
+  case user_input
+  when "start"
+    require "../T1A3_SBhamra/Play_Game.rb"
+    break # make sure to break so you don't ask again
+  else
+    puts "Please enter start"
+    print prompt # print the prompt, so the user knows to re-enter input
+  end
 end
 
-class Play_Game
-    puts "the game"
-end 
-   
- 
- 
 
-
-
+if user_input == 3
+    #begin game prompt, links to another ruby file which contains most of the game script
+    puts "You need to type 'start' to begin.".colorize(:color => :red, :background => :black)
+    print "> ".colorize(:color => :red, :background => :black)
+    case (gets.chomp)
+    when "start"  
+        require "../T1A3_SBhamra/Play_Game.rb"
+    end
+end

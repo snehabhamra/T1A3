@@ -35,11 +35,14 @@ if user_input == 1
     puts "The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'.".colorize(:color => :red, :background => :black)
     sleep (1)
     puts ""
-    puts "If that makes sense, please type 'start' to begin! If it doesn't make sense, then I really don't know what to tell you..".colorize(:color => :red, :background => :black)
+    puts "If that makes sense, please type 'start' to begin! If that doesn't make sense, then I really don't know what to tell you..".colorize(:color => :red, :background => :black)
     print "> ".colorize(:color => :red, :background => :black)
     case (gets.chomp)
     when "start"
         require "../T1A3_SBhamra/Play_Game.rb"
+    else
+        puts "please type start".colorize(:color => :red, :background => :black) 
+        
     end
 end
 
@@ -59,11 +62,19 @@ end
 
 if user_input == 3
     #begin game prompt, links to another ruby file which contains most of the game script
-    puts "You need to type 'start' to begin.".colorize(:color => :red, :background => :black)
-    print "> ".colorize(:color => :red, :background => :black)
-    case (gets.chomp)
-    when "start"  
+    prompt = "> "
+    puts "Please enter 'start' to begin.".colorize(:color => :red, :background => :black)
+    print prompt
+    
+    while user_input = gets.chomp # loop while getting user input
+      case user_input
+      when "start"
         require "../T1A3_SBhamra/Play_Game.rb"
+        break # make sure to break so you don't ask again
+      else
+        puts "Please enter start".colorize(:color => :red, :background => :black)
+        print prompt # print the prompt, so the user knows to re-enter input
+      end
     end
 end
 
