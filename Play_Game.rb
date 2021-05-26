@@ -17,26 +17,24 @@ puts ""
         puts "'They call me Sypha'"
         require "../T1A3_SBhamra/main.rb"
         when "no"
-        puts "You choose to ignore the girl. Instead you look around the decaying room further, trying to understand your surroundings."  
+        puts "You choose to ignore the girl. Instead you look around the decaying room further, trying to understand your surroundings."
+        puts "There does not seem to be much to look at, besides an oil lamp on a book, and the locked door."  
         else 
         puts "..."  
     end
-    puts "Would you like to wander around?"
+    puts "Would you like to wander around? [y/n]:"
     case (gets.chomp)
-    when "yes"
-        puts "With a deep breath, you lift yourself up from the mattress with great difficulty, still groggy from the effects of sleep." 
-        puts "The floorboards creaking under your weight, you notice that the room is fairly empty lest for two moldy mattresses on opposite ends, a dying oil lamp and a small leatherbound book upon which the lamp rested."
-        puts "Do you reach for the book?"
-        case (gets.chomp)
+        when "yes"
+            puts "With a deep breath, you lift yourself up from the mattress with great difficulty, still groggy from the effects of sleep." 
+            puts "The floorboards creaking under your weight, you notice that the room is fairly empty lest for two moldy mattresses on opposite ends, a dying oil lamp and a small leatherbound book upon which the lamp rested."
+            puts "Do you reach for the book? [y/n]"
+            case (gets.chomp)
             when "yes"
-                puts "You reach for the book; upon inspection it reveals very little, however a rusty fork falls out of its leather jacket. You pocket the fork"
-                require "../T1A3_SBhamra/main.rb"
-                end
-            when "no"
-                puts "Interest waning, you return your attention to the room, and approach the girl instead."
+                puts "You reach for the book; upon inspection it reveals several morbid sketches of corpse-like figures and an ominous figure looming above, dressed all in black.."
+                puts "With fright, you put the book back, and return your attentions to the girl."
                 require "../T1A3_SBhamra/main.rb"
             end
-    else 
-        puts "Please decide what to do"
-
-    end    
+            when "no"
+                puts "Interest waning, you return your attention to the the girl instead."
+                require "../T1A3_SBhamra/main.rb"
+            end
