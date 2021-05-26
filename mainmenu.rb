@@ -15,7 +15,7 @@ a = Artii::Base.new :font => 'slant'
 a.asciify('The Forgotten')
 puts a.asciify('The Forgotten')
 
-print TTY::Box.frame "Welcome to 'The Forgotten: GOTY Edition' - guaranteed to be the corniest most cliche game you'll ever play!".colorize(:color => :red, :background => :black)
+print TTY::Box.frame "Welcome to 'The Forgotten: GOTY Edition' - guaranteed to be the wordiest game you'll ever play!".colorize(:color => :red, :background => :black)
 sleep (1)
 #sleep is handy syntax to allow for a pause/break between text so it does not appear as static or as squashed together.
 puts ""
@@ -32,7 +32,7 @@ if user_input == 1
     puts ""
     puts "The controls are fairly simple, when met with a question, the responses can be selected or typed in the terminal.".colorize(:color => :red, :background => :black)
     puts ""
-    puts "The most common expressions you will use are 'a, b or c', 'yes/no', 'talk', 'inspect', 'attack' or 'leave'.".colorize(:color => :red, :background => :black)
+    puts "The most common expressions you will use are 'yes/no', 'insert_name' 'attack' or 'leave' - all other choices may otherwise be selected on a list.".colorize(:color => :red, :background => :black)
     sleep (1)
     puts ""
     puts "If that makes sense, please type 'start' to begin! If that doesn't make sense, then I really don't know what to tell you..".colorize(:color => :red, :background => :black)
@@ -51,7 +51,7 @@ end
 
 if user_input == 2
     #brief game plot synopsis and explanation.
-    puts "The Forgotten is a non-linear, text based mystery game, which involves an amnesiac protagonist who must navigate their way through a mansion of horrors.".colorize(:color => :red, :background => :black)
+    puts "The Forgotten is a non-linear, text based mystery game, which involves an amnesiac protagonist who must navigate their way through a mansion to escape.".colorize(:color => :red, :background => :black)
     puts "".colorize(:color => :red, :background => :black)
     puts "Inspired by older horror games like Resident Evil, Amnesia and old Choose-Your-Own-Adventure books , 'The Forgotten' offers the player multiple choices and endings.".colorize(:color => :red, :background => :black)
     puts "".colorize(:color => :red, :background => :black)

@@ -1,8 +1,8 @@
 class Sypha_route
     require "tty-prompt"
     prompt = TTY::Prompt.new
-    
-    puts "She is seated on the mattress across from yours, as still as a rock. Her eyes are shut, however as you approach her she grimaces and opens her eyes, glaring at you."
+    puts ""
+    puts "She is seated on the mattress across from yours, as still as a rock. She appears deep in thought, however as you approach her she grimaces and opens her eyes, staring at you."
     puts ""
 
     choices = [
