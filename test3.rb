@@ -107,6 +107,7 @@ catch :end_of_game do
                         puts ""
                         sleep (2)
                         require "../T1A3_SBhamra/test.rb"
+                        break
                     end
     end
 end
