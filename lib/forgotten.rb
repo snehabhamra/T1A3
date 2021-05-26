@@ -58,7 +58,7 @@ if user_input == 2
     prompt.yes? ("would you like to go back?").colorize(:color => :red, :background => :black)
     #I do not know a more effective way of going back to the main menu prompt itself yet so instead linking back to the ruby file forefront does the trick
     if true
-       require "../lib/mainmenu.rb"
+       require "../lib/forgotten.rb"
     end
 end
 

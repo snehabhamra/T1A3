@@ -1,12 +1,30 @@
-T1A3 - 'The Forgotten: GOTY Edition' 
+T1A3 - 'The Forgotten' 
 
 This is a choose-your-own-adventure text based game I developed through Ruby. 
 
-This is the final (for now - it is still quite unstable) edition of this game, and may be played if you have Ruby installed by installing its Ruby Gem dependancy.
+This is the final (for now - it is still quite unstable and miserable) edition of this game, and may be played if you have Ruby installed by installing its Ruby Gem dependancy.
 
 The repository for this application may be accessed at github.com/snehabhamra/T1A3
 
-The operational flowchart for this application is available in "../T1A3_SBhamra/docs/flowchart.png"
+========================================================================================================================================
+INSTALLATION INSTRUCTIONS
+1. 
+
+SYSTEM REQUIREMENTS
+- Ruby 2.7.3
+- RBENV 1.1.2 
+
+Mac recommended OS is Big Sur
+
+DEPENDENCIES
+- Colorizer
+https://rdoc.info/github/fazibear/colorize
+- TTY-Prompt 
+https://github.com/piotrmurach/tty-prompt
+- Artii
+https://github.com/miketierney/artii
+- TTY-Box
+https://github.com/piotrmurach/tty-box
 
 ========================================================================================================================================
 PURPOSE
@@ -26,22 +44,22 @@ A main-menu system at the beginning of the game when first run is a primary feat
 
 Multiple paths are available in this game to vary the dialogue the player may encounter. This was utilised as both actions the player may take, and in the second part of the game the player also has the option to move back and forth between two different rooms to a limited capacity. This feature was implemented using control structures such as loops and if/when/else statements. A class and object method was used for the creation of the two accessible rooms in the latter section of the game. 
 
-Similar to the various paths available, I also implemented multiple endings in the game, depending on the actions taken by the player. Two separate ruby files were written to provide a game over screen, and there are a total of three instances in the game where one of these two game over screens may be triggered. 
+Similar to the various paths available, I also implemented multiple endings in the game, depending on the actions taken by the player. Two separate ruby files were written to provide a Game-Over screen, and there are a total of three instances in the game where one of these two game over screens may be triggered. 
 
+The replay option was also added as a feature so that when the player reaches an ending they are given the option to either quit the application or not. This is implemented via a simple yes/no prompt - if they choose to not quit they are instead looped back to the main menu file so that they may play again or otherwise examine the main menu once more if they see fit. TTy-prompt was utilised for this yes/no loop.
 
+=========================================================================================================================================
+OUTLINE - USER EXPERIENCE
 
+For an optimal user experience, the functions of the app are fairly simple and explained at the beginning. As a text-prompted game, or interactive book, the player will be asked to select answers or responses from a drop down list, or to input particular words depending on the action they would like to take.
 
+If a specific word needs to be utilised, the screen will advise the player which two words they may choose from to progress. This ensures minimal bugs as the input variables are fairly strict and non-dynamic. On the main menu an instructions option is available for the user which will explicitly explain the above for further understanding.
 
+To examine how the application itself functions, its operational flowchart is available in "../T1A3_SBhamra/docs/flowchart.png"
 
-RUBY GEMS SOURCES
-- Colorizer
-https://rdoc.info/github/fazibear/colorize
-- TTY-Prompt 
-https://github.com/piotrmurach/tty-prompt
-- Artii
-https://github.com/miketierney/artii
-- TTY-Box
-https://github.com/piotrmurach/tty-box
-
+=========================================================================================================================================
 
 Thank you.
+
+Sneha Bhamra
+2021 @ Coder Academy
