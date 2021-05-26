@@ -15,7 +15,7 @@ class Sypha_route
         puts "You notice her sigh before closing her eyes again. 'Everyone who comes here, they were all sold to the owner of this manor, like lambs to a slaughter'."
         puts "'That includes you and me.'
         ..."
-        require "../T1A3_SBhamra/gamecontinue.rb"
+        require "../lib/gamecontinue.rb"
     end
     if user_input == 2
         puts "An irrational fear takes over you. You are alone with this girl, bleeding and trapped in an unfamiliar room." 
@@ -27,7 +27,7 @@ class Sypha_route
         puts "
         
         "
-        require "../T1A3_SBhamra/test_2.rb"
+        require "../lib/test_2.rb"
     end
 
 end

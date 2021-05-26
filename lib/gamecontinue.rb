@@ -29,7 +29,7 @@ user_input = prompt.select("How should you proceed?", choices)
               With a little effort Sypha and you both push the mattress and spot the trapdoor underneath. Slowly, you both make your way through.."
         puts ""
               sleep (3)
-        require "../T1A3_SBhamra/test3.rb"
+        require "../lib/test3.rb"
     end
 
     if user_input == 2
@@ -44,5 +44,5 @@ user_input = prompt.select("How should you proceed?", choices)
         puts ""
         puts "******"
         sleep (3)
-        require "../T1A3_SBhamra/test3.rb"
+        require "../lib/test3.rb"
     end

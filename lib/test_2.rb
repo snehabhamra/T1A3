@@ -20,7 +20,7 @@ user_input = prompt.select("Would you like to quit?", choices)
         if user_input == 1    
         puts "We will now take you back to the main menu"
                 sleep (2)
-                require "../T1A3_SBhamra/mainmenu.rb"
+                require "../lib/mainmenu.rb"
         end
         if user_input == 2
                 puts ""

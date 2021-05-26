@@ -40,7 +40,7 @@ if user_input == 1
     while user_input = gets.chomp # loop while getting user input
         case user_input
         when "start"
-          require "../T1A3_SBhamra/Play_Game.rb"
+          require "../lib/Play_Game.rb"
           break # make sure to break so you don't ask again
         else
           puts "Please enter start".colorize(:color => :red, :background => :black)
@@ -58,7 +58,7 @@ if user_input == 2
     prompt.yes? ("would you like to go back?").colorize(:color => :red, :background => :black)
     #I do not know a more effective way of going back to the main menu prompt itself yet so instead linking back to the ruby file forefront does the trick
     if true
-       require "../T1A3_SBhamra/mainmenu.rb"
+       require "../lib/mainmenu.rb"
     end
 end
 
@@ -72,7 +72,7 @@ if user_input == 3
     while user_input = gets.chomp # loop while getting user input
       case user_input
       when "start"
-        require "../T1A3_SBhamra/Play_Game.rb"
+        require "../lib/Play_Game.rb"
         break # make sure to break so you don't ask again
       else
         puts "Please enter start".colorize(:color => :red, :background => :black)

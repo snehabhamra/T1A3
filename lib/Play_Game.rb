@@ -30,7 +30,7 @@ Do you ask her name in return? [y/n]:"
 case (gets.chomp)
         when "yes"
         puts "'You can call me Sypha'"
-        require "../T1A3_SBhamra/main.rb"
+        require "../lib/main.rb"
         when "no"
         puts "You choose to ignore the girl. Instead you look around the decaying room further, trying to understand your surroundings.
         "
@@ -52,9 +52,9 @@ case (gets.chomp)
                 puts "You reach for the book; upon inspection it reveals several morbid sketches of corpse-like figures and an ominous figure looming above, dressed all in black.."
                 puts "
                 With fright, you put the book back, and return your attentions to the girl."
-                require "../T1A3_SBhamra/main.rb"
+                require "../lib/main.rb"
             end
             when "no"
                 puts "Interest waning, you return your attention to the the girl instead."
-                require "../T1A3_SBhamra/main.rb"
+                require "../lib/main.rb"
             end

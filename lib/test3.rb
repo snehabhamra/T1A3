@@ -72,7 +72,7 @@ catch :end_of_game do
                                 puts "
                                     The scream is yours.
                                     "
-                                        require "../T1A3_SBhamra/test_2.rb"
+                                        require "../lib/test_2.rb"
                                 end
                                 if user_input == 2
                                     puts "You confidently stride towards the bookcase, wasting no time."
@@ -106,7 +106,7 @@ catch :end_of_game do
                               Not thinking to check on Sypha, you make a run for it, and rush out through the door."
                         puts ""
                         sleep (2)
-                        require "../T1A3_SBhamra/test.rb"
+                        require "../lib/test.rb"
                         break
                     end
     end
