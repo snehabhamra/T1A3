@@ -15,7 +15,7 @@ a = Artii::Base.new :font => 'slant'
 a.asciify('The Forgotten')
 puts a.asciify('The Forgotten')
 
-print TTY::Box.frame "Welcome to 'The Forgotten: GOTY Edition' - guaranteed to be the wordiest game you'll ever play!".colorize(:color => :red, :background => :black)
+print TTY::Box.frame "Welcome to 'The Forgotten' -  the shortest and wordiest game you'll ever play!".colorize(:color => :red, :background => :black)
 sleep (1)
 #sleep is handy syntax to allow for a pause/break between text so it does not appear as static or as squashed together.
 puts ""
