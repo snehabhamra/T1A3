@@ -4,14 +4,19 @@ This is a choose-your-own-adventure text based game I developed through Ruby.
 
 This is the final (for now - it is still quite unstable and miserable) edition of this game, and may be played if you have Ruby installed by installing its Ruby Gem dependancy.
 
-The repository for this application may be accessed at github.com/snehabhamra/T1A3
+The repository for this application may be accessed at https://github.com/snehabhamra/T1A3/ 
+
+The Trello Board for this app may be accessed at https://trello.com/b/t8RsMNCL/choose-your-own-adventure-terminal-game 
 
 ========================================================================================================================================
 INSTALLATION INSTRUCTIONS
-1. 
+
+
+
+========================================================================================================================================
 
 SYSTEM REQUIREMENTS
-- Ruby 2.7.3
+- Ruby >= 2.4.0
 - RBENV 1.1.2 
 
 Mac recommended OS is Big Sur
