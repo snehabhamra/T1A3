@@ -11,7 +11,17 @@ The Trello Board for this app may be accessed at https://trello.com/b/t8RsMNCL/c
 ========================================================================================================================================
 INSTALLATION INSTRUCTIONS
 
+1: Install ruby
 
+2: clone the repo
+
+git clone: https://github.com/snehabhamra/T1A3/ 
+
+3: 'cd' into the /lib directory of T1A3
+
+4: Run the build shell script: ./bash when in the /lib directory
+
+5: The game should now work!
 
 ========================================================================================================================================
 
